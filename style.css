@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:black;
+    color:white;
 }
 
 body{
@@ -122,4 +122,20 @@ body{
 
 .item-label{ 
     font-weight: lighter;
+}
+
+@media only screen and (max-width:750px) {
+   body{
+       display:flex;
+       flex-direction: row;
+   }
+
+   .card-container{
+   
+    min-height: 80vh;
+    max-width: 600px;
+    transform: scale(0.85);
+    transition: 1s;
+}
+    
 }
